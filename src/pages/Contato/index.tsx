@@ -1,21 +1,15 @@
+import NavBar from '../../components/NavBar'
 import './styles.css'
 
-function Contato() {
+export default function Contato() {
     return (
-        <>
             <div id="container">
                 <nav id="menu">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./index.html">Receitas</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="./contato/contato.html">Contato</a></li>
-                    </ul>
+                    <NavBar/>
                 </nav>
-                <div id="content"></div>
+                <div id="content">
+                    <h1>Contato</h1>
+                </div>
             </div>
-        </>
     )
 }
-
-export default Contato
