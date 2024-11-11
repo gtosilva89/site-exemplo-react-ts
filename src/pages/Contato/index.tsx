@@ -1,5 +1,5 @@
-import NavBar from "../../components/NavBar";
-import "./styles.css";
+import NavBar from '../../components/NavBar'
+import './styles.css'
 
 export default function Contato() {
     return (
@@ -9,5 +9,6 @@ export default function Contato() {
                 <h1>Contato</h1>
             </div>
         </div>
-    );
+    )
 }
+
