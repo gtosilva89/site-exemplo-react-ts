@@ -1,5 +1,5 @@
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Mulish', Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
     font-synthesis: none;
@@ -32,26 +32,17 @@ dl,
 dd {
     margin-block-end: 0;
 }
-
 /* FIM RESET GLOBAL */
 
-
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 #root {
-    width: 100%;
-    height: 100%;
-}
-
-#container {
+    width: 80%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: center;
 }

@@ -1,0 +1,61 @@
+#content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#receita {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    color: #F08080;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+
+#details {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#details>img {
+    width: 100%;
+    border-radius: 8px;
+    border: #F08080 3px solid;
+}
+
+#instructions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#instructions h3 {
+    color: #F08080;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+
+#ingredients>ul {
+
+    width: 100%;
+}
+
+ul>li {
+    font-size: 1.2rem;
+    list-style-position: inside;
+    list-style-type: square;
+    color: #F08080
+}
+

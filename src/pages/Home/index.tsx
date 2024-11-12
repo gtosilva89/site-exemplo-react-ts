@@ -1,51 +1,48 @@
+import CardReceita from '../../components/CardReceita'
 import NavBar from '../../components/NavBar'
 import './styles.css'
-import image from "../../assets/bolinho-de-chuva.jpg"
-
-
 
 export default function Home() {
-    const items = [
+    const receitas = [
         {
+            id: '1',
             titulo: 'Sopa de Agnoline',
-            imagem: '../../assets/agnoline.webp',
+            imagem: '/public/assets/agnoline.webp',
             mensagem: 'Receita de alguma coisa legal que você vai ver depois',
             msg_botao: 'Ver Receita'
         },
         {
+            id: '2',
             titulo: 'Bolinho de chuva',
-            imagem: '../../assets/bolinho-de-chuva.jpg',
+            imagem: '/public/assets/bolinho-de-chuva.jpg',
             mensagem: 'Receita de alguma coisa legal que você vai ver depois',
             msg_botao: 'Ver Receita'
         },
         {
-            titulo: 'Sopa de Agnoline',
-            imagem: '../../assets/agnoline.webp',
+            id: '3',
+            titulo: 'Bolinho de Arroz',
+            imagem: '/public/assets/bolinho-de-arroz.jpeg',
             mensagem: 'Receita de alguma coisa legal que você vai ver depois',
             msg_botao: 'Ver Receita'
         },
         {
-            titulo: 'Bolinho de chuva',
-            imagem: '../../assets/bolinho-de-chuva.jpg',
+            id: '4',
+            titulo: 'Tortei',
+            imagem: '/public/assets/tortei.jpg',
             mensagem: 'Receita de alguma coisa legal que você vai ver depois',
             msg_botao: 'Ver Receita'
-        }
+        },
     ]
 
-
     return (
-        <div id="container">
+        <>
             <NavBar />
             <div id="content">
-                {items.map((item) => (
-                    <div className="card" key={item.titulo}>
-                        <img src={image} alt={item.titulo} />
-                        <p>{item.mensagem}</p>
-                        <button className="button">{item.msg_botao}</button>
-                    </div>
+                {receitas.map((item) => (
+                    <CardReceita item={item} />
                 ))}
             </div>
-        </div>
+        </>
     )
 }
 

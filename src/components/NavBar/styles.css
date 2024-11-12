@@ -1,9 +1,10 @@
 nav {
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: end;
     border-bottom: 1px solid #F08080;
     margin-bottom: 20px;
+    background-color: aliceblue;
 }
 
 nav>ul {

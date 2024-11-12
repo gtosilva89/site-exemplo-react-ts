@@ -6,11 +6,16 @@ import "./index.css";
 
 import Contato from "./pages/Contato";
 import Home from "./pages/Home/index.tsx";
+import Receita from "./pages/Receita/index.tsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Home />,
+    },
+    {
+        path: "/receita/:id",
+        element: <Receita />,
     },
     {
         path: "/contato",
